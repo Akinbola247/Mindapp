@@ -1,0 +1,338 @@
+body{
+    background-image: url("https://transparenttextures.com/patterns/concrete-wall-2.png");
+
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 51em;
+}
+
+
+.type_form{ 
+    width: 30%;
+}
+
+.typewriter{
+    display: inline-block;
+}
+
+.loginTypewriter{
+    display: inline-block;
+}
+
+.loginTypewriter h1{
+    font-family: monospace;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    border-right: 0.15em solid black;
+    animation: blink 0.3s step-end infinite alternate, typing 3s steps(9)
+}
+
+.typewriter h1{
+    font-family: monospace;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    border-right: 0.15em solid black;
+    animation: blink 0.3s step-end infinite alternate, typing 3s steps(12)
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    } 
+}
+@keyframes typing {
+    from {
+        width: 0%
+    }
+}
+
+
+.successfull h1{
+    font-family: monospace;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.successfull h5{
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+#invalid-feedback1,
+#invalid-feedback2,
+#invalid-feedback3,
+#invalid-feedback4
+{
+  display: none;
+  color: red;
+}
+
+.buttonsub{
+    margin-top: 20px;
+}
+.submitButton{
+    background-color: teal;
+    animation: pulse 2s ease-in-out .5s infinite;
+    border: none;
+}
+.signUplink{
+   margin-top: 20px;
+}
+.signupLinkButton{
+    border: none;
+    outline: none;
+    color: blue;
+    background: none;
+    text-decoration: underline;
+}
+.nav{
+    width: 100%
+}
+
+.footer{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   color: black;
+   height: 60px;
+   width: 100%; 
+   padding-top: 10px;
+}
+
+.copy{
+    letter-spacing: 5px;
+    font-size: small;
+}
+.icon{
+    display: inline;
+    text-align: center;
+    
+}
+.icon i{
+    margin: 10px 10px;
+}
+.grid-container{
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+}
+.grid-item{
+    padding: 20px;
+    text-align: center;
+}
+.img-grid{
+    margin-left: 5em;
+    width: 700px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.word-grid{
+    margin: 4em 2em 0em 2em;
+    font-family: 'Rubik Distressed', cursive;
+}
+.started{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    position: relative;
+    left: 25%;
+}
+.onstart{
+    display: inline;
+   width: 200px;
+}
+.download {
+    text-align: center;
+    padding: 4% 10% 3%;
+}
+
+
+form.createMind input{
+    width: 100%;
+    border-style: dotted ;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 25px;
+    outline: none;
+    font-size: 1.2em;
+    font-family: inherit;
+    resize: none; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    border-color: cyan;
+}
+.upload{
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 255, 255, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+.createMind h1{
+    font-family: 'Rubik Distressed', cursive;
+}
+
+
+
+
+form.createMind textarea {
+  width: 100%;
+  border-style: dotted ;
+  padding: 25px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  border-color: cyan;
+}
+.controlCreateMind{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.mind {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 10px;
+    width: 240px;
+    margin: 16px;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  .mind h1 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+    font-family: 'Rubik Distressed', cursive;
+  }
+  .mind p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .delete{
+    background: none;
+    border: none;
+    outline: none;
+    color: rgb(13, 199, 199);;
+  }
+
+
+
+@keyframes pulse {
+    0% {
+        background-color: teal;
+        transform: scale(0.9);
+    }
+    50% {
+        background-color: teal;
+        transform: scale(1);
+    }
+    100% {
+        background-color: teal;
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .type_form{
+        width: 70%
+    }
+    .grid-container{
+        grid-template-columns: auto;
+    }
+    .grid-item{
+        padding: 10px;
+    }
+    .img-grid{
+        margin-left: 1em;
+        width: 400px;
+    }
+    .word-grid{
+        margin: 0em 0em 0em 0em;
+    }
+    .started{
+        width: 200px;
+        position: relative;
+        left: 30%;
+    }
+    
+    .mind {
+        padding: 10px;
+        width: 380px;
+        margin: 16px;
+        display: inline-block;
+        vertical-align: bottom;
+      }
+    
+}
+
+@media screen and (min-width: 501px) and (max-width: 766px) {
+    .type_form{
+        width: 70%
+    }
+    .grid-container{
+        grid-template-columns: auto;
+    }
+
+    .started{
+        width: 200px;
+        position: relative;
+        left: 40%;
+    }
+    .grid-item{
+        padding: 10px;
+    }
+    .img-grid{
+        margin-left: 3em;
+        width: 600px;
+    }
+    .word-grid{
+        margin: 0em 0em 0em 0em;
+    }
+}
+
+
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .type_form{
+        width: 50%
+    }
+    .grid-container{
+        grid-template-columns: auto;
+    }
+    .img-grid{
+        margin-left: 10em;
+    }
+    .word-grid{
+        margin: 0em 0em 0em 0em;
+    }
+    .started{
+        width: 300px;
+        position: relative;
+        left: 35%;
+    }
+
+    
+}
