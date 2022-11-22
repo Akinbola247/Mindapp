@@ -111,7 +111,7 @@ function Signup(props){
                 
                 <div className="col-md-12">
                     <label htmlFor="cnumber" className="form-label">Password</label>
-                    <input onClick={clear} type="password" className="form-control" id="Password" name="password"  required="" minLength="8" autoComplete="off" onChange = {userValid} pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})"/>
+                    <input onClick={clear} type="password" className="form-control" id="Password" name="password"  required="" minLength="8" autoComplete="off" onChange = {userValid} pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*?])(?=.{8,})"/>
                     <small className="text-muted">Min. of eight(8) characters with at least an uppercase, lowercase & number</small>
                     <div id="invalid-feedback3" style={invalidStyle3 ? {display : "block"}: {display : "none"}}>
                       {invalidInput3 ? "Your password must contain least 1 uppercase, lowercase, special character and must contain at least 8 characters" : "Pick a Password"}
